@@ -2,7 +2,7 @@ async function getPhotographers() {
   // Ceci est un exemple de données pour avoir un affichage de photographes de test dès le démarrage du projet,
   // mais il sera à remplacer avec une requête sur le fichier JSON en utilisant "fetch".
   const reponse = await fetch(
-    "https://lolobxl1.github.io/Front-End-Fisheye/data/photographers.json"
+    "../../data/photographers.json"
   );
   data = await reponse.json();
   //console.log(data);
