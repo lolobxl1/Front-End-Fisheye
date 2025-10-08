@@ -9,11 +9,26 @@
   </head>
   <body>
     <header>
-      <img src="assets/images/logo.png" class="logo" />
+      <a href="index.html"><img src="assets/images/logo.png" class="logo" alt="Fisheye Home page" /></a>
     </header>
     <main id="main">
       <div class="photograph-header">
-        <button class="contact_button" onclick="displayModal()">Contactez-moi</button>
+      </div>
+      <div class="sort">
+        <label id="sort-label">Trier par</label>
+        <div class="dropdown" aria-labelledby="sort-label">
+          <button id="dropdown-btn" aria-haspopup="listbox" aria-expanded="false">
+            <span class="selected">Popularité</span>
+            <span class="arrow"></span>
+          </button>
+          <ul class="dropdown-list" role="listbox" hidden>
+            <li tabindex="0" data-value="Popularité">Popularité</li>
+            <li tabindex="0" data-value="Date">Date</li>
+            <li tabindex="0" data-value="Titre">Titre</li>
+          </ul>
+        </div>
+      </div>
+      <div class="photos">
       </div>
     </main>
     <div id="contact_modal">
